@@ -1,0 +1,96 @@
+# Java 8
+
+- lambda expression
+- function interface
+- Strem API
+- default method
+- method references
+- optional class
+- forEach
+- concurrency enhancement
+
+# Java 8 Stream API
+
+Collection - to represent group of data / object as single entities
+Stream - to process the data from collection
+
+Stream Features
+- stream does not store element
+- stream is functional in nature
+- stream is lazy 
+- elements of a stream are only visible once during the life of a stream
+
+1. intermediate opeartion
+ - map()
+ - filter()
+ - sorted()
+2. terminal opeartion
+ - collect()
+ - forEach()
+ - reduce()
+
+
+# Lambda Expression / function
+
+() -> {}
+
+() - parameter list or empty
+-> - lambda opeartor
+{} - body / expression
+
+
+public void sayHello(String name){
+  System.out.println("Hello "+ name);
+}
+
+
+(name) -> { System.out.println("Hello "+ name); }
+
+
+filter()
+map()
+collect()
+forEach()
+
+
+# What is reactive programmng
+it describe a design paradigm that relies on asynchrnous programminmg logic to handle a real time update
+to static content
+to provide an efficient maesn that use of automated data stream, to handle data update to content 
+whenever a user makes an inquery
+
+# Why reactive programming
+we want to create responsive and higgly scalable application with non blocking style of code
+
+
+- current
+1. microservices app
+2. deply on cloud envirnmenbt
+3. embraces distributed system
+
+- expection
+- response time are expected in milesecond
+- no downtime is expected
+- scale up automatically based on the load
+
+
+
+Sping MVC
+- thread pool size of embedded tomcat in spring MVC is 200
+- but we can incraesw the thread pool size to a certian limit
+- can we support 10000 concurrent user? no
+
+
+- reactive programming is a new programming paradim
+- asynchrnous and non blokcing
+- data flow as an event / message driven stream
+- functuion style of coding
+- backpressure on data stream
+
+
+Netty as an non blocking server
+projector reactor for writing non blocking code
+
+
+
+
